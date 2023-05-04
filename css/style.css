@@ -462,6 +462,8 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   min-height: 70px;
+  line-height: 2.4;
+  font-weight: 600;
 }
 
 .my-work-box img {
