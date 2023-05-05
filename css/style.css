@@ -217,6 +217,11 @@ body {
 
 .navbar-logo span {
   color: var(--clr-primary);
+  transition: inherit;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -ms-transition: inherit;
+  -o-transition: inherit;
 }
 
 .navbar-logo a:hover {
