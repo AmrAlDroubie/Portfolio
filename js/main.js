@@ -2,7 +2,7 @@ const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarMenu = document.querySelector(".navbar-nav");
 
 navbarToggler.onclick = function () {
-    navbarMenu.classList.toggle("active");
+  navbarMenu.classList.toggle("active");
 };
 
 // data footer
@@ -14,20 +14,17 @@ let thisYear = date.getFullYear();
 footerYear.textContent = thisYear;
 
 // typing
-let normalText = "Hello I'm Amr AlDroubie Front End developer";
+let normalText = "Hello I'm Amr AlDroubie Web Developer";
 let eleTyping = document.querySelector(".header-content > p");
 let n = 0;
-let typingInterval = setInterval(function(){
-    if(n<9){
-        document.querySelector(".span1").innerHTML += normalText[n]
-    }
-    else if(n>9 && n<23){
-        document.querySelector(".span2").innerHTML += normalText[n] ;
-    }
-    else{
-        document.querySelector(".span3").innerHTML += normalText[n]
-    }
-    n++;
-    if(n == normalText.length) clearInterval(typingInterval);
-},100)
-
+let typingInterval = setInterval(function () {
+  if (n < 9) {
+    document.querySelector(".span1").innerHTML += normalText[n];
+  } else if (n > 9 && n < 23) {
+    document.querySelector(".span2").innerHTML += normalText[n];
+  } else {
+    document.querySelector(".span3").innerHTML += normalText[n];
+  }
+  n++;
+  if (n == normalText.length) clearInterval(typingInterval);
+}, 100);
